@@ -3,39 +3,33 @@ const inputText=document.querySelector("#input");
 const output=document.querySelector("#output");
 
 var url="https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
-var data="sushant";
+var text="sushant";
 
+console.log(btnTransalate)
 
-function clickHandler()
+function urlConstruct(text)
 {
-    checkIfEmpty();
-    var url2=url+"?text="+inputText.value;
-    fetch(url2)
-    .then(response=>response.json())
-    .then(json=>console.log(json))
-    .catch(errorHandler);
+    var request=url+"?"+"text="+text;
+    return request;
 }
 
 function errorHandler(error)
 {
-    console.log("error occured");
-    alert("something went wrong")
+    console.log("error occured")
+    alert("Something went wrong")
 }
 
-btnTransalate.addEventListener("click",clickHandler());
-
-
-
-function checkIfEmpty()
+function clickHandler()
 {
-    if(inputText.value=="")
-    {
-        alert("Enter some text");
-        return true;
-    }
+    var translationURL=urlConstruct(inputText.value)
+    fetch(translationURL)
+    .then(response => response.json())
+    .then(json=>console.log(json))
+    .catch(errorHandler)
+
 }
 
-function translate()
-{
-    output.innerHTML=inputText.value;
-}
+
+
+
+btnTransalate.addEventListener("click",clickHandler)
