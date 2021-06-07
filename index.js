@@ -13,14 +13,14 @@ function clickHandler()
     fetch(url2)
     .then(response=>response.json())
     .then(json=>console.log(json))
-    //catch(errorHandler)
+    .catch(errorHandler);
 }
 
-// function errorHandler(error)
-// {
-//     console.log("error occured");
-//     alert("something went wrong")
-// }
+function errorHandler(error)
+{
+    console.log("error occured");
+    alert("something went wrong")
+}
 
 btnTransalate.addEventListener("click",clickHandler());
 
