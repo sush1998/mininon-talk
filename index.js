@@ -29,13 +29,23 @@ function clickHandler()
     .then(json=>
         {
             var translatedText=json.contents.translated;
-            output.innerHTML=translatedText;
+            output.innerHTML=translatedText;``
         })
     .catch(errorHandler)
 
 }
 
+function checkIfEmpty()
+{
+    if(inputText.value=="")
+    {
+        alert("Enter text to translate");
+        inputText.focus();  
+    }
+    else{
+        clickHandler();
+    }
+}
 
 
-
-btnTransalate.addEventListener("click",clickHandler)
+btnTransalate.addEventListener("click",checkIfEmpty)
