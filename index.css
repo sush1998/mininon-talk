@@ -12,7 +12,7 @@ html,body{
 body
 {
     margin: 0;
-    font-family: 'Kalam', cursive;
+    font-family: 'Kanit', cursive;
     color: #1a41a7;
     background-color: #7FFFD4;
     
@@ -73,7 +73,7 @@ nav>#page-heading
     margin: 1rem auto;
     background-color: rgb(235, 235, 72);
     font-size: 1.5rem;
-    font-family: 'Kalam', cursive;
+    font-family: 'Kanit', cursive;
     border-radius: 1rem;
     color: #1a41a7;
 }
