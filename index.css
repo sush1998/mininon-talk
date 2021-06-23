@@ -5,15 +5,7 @@ html,body{
     width: 100%;
 }
 
-:root
-{
-    --dark-grey:#24424C;
-    --green:#85CF4F;
-    --white:#FFFFFF;
-    --light-grey:#DADADA;
-    --black:#000000;
-    --grey:#77836C;
-}
+
 
 
 
@@ -22,7 +14,7 @@ body
     margin: 0;
     font-family: 'Kalam', cursive;
     color: #1a41a7;
-    background-color: aquamarine;
+    background-color: #7FFFD4;
     
 }
 
