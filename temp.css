@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&display=swap');
+
+html,body{
+    height: auto;
+    width: 100%;
+}
+
+:root
+{
+    --dark-grey:#24424C;
+    --green:#85CF4F;
+    --white:#FFFFFF;
+    --light-grey:#DADADA;
+    --black:#000000;
+    --grey:#77836C;
+}
+
+
+
+body
+{
+    margin: 0;
+    font-family: 'Kalam', cursive;
+    color: #1a41a7;
+    background-color: aquamarine;
+    
+}
+
+body>a{
+    text-decoration: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: #1a41a7;
+}
+
+nav{
+   
+    padding: 0.5rem;
+    background-color:rgb(235, 235, 72);
+}
+
+nav>#page-heading
+{
+    font-size: xx-large;
+    font-weight: 600;
+    text-align: center;
+    margin: auto;
+}
+
+.translation-section
+{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 1rem;  
+    width: 80%;
+    max-width: 600px;
+}
+
+.translation-section>#intro
+{
+    justify-self:left
+}
+
+.translation-section>textarea
+{
+   
+    font-size: 1rem;
+    height: 8rem;
+}
+
+.translation-section>button
+{
+    width: fit-content;
+    margin: 2rem auto;
+    background-color: rgb(235, 235, 72);
+    font-size: 2rem;
+    font-family: 'Kalam', cursive;
+    border-radius: 1rem;
+    color: #1a41a7;
+}
+
+
+footer{
+    position: absolute;
+    font-size:small;
+    width: 100%;
+    background-color: rgb(235, 235, 72);
+    bottom: 0%;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) 
+{
+    .translation-section
+    {
+        width: 80%;
+        font-size: medium;
+    }
+
+    .translation-section>textarea
+    {
+        height: 6rem;
+    }
+
+    .translation-section>button
+    {
+        margin: 1rem auto;
+        font-size: 1rem;
+    }
+
+    .translation-section>h2
+    {
+        margin: 1rem;
+        font-size: medium;
+    }
+    
+
+}
