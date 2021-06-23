@@ -37,10 +37,13 @@ a
 }
 
 nav{
-   
+    display: flex;
+    flex-direction: row;
     padding: 0.5rem;
     background-color:rgb(235, 235, 72);
+    height: 4rem;
 }
+
 
 nav>#page-heading
 {
@@ -75,18 +78,24 @@ nav>#page-heading
 .translation-section>button
 {
     width: fit-content;
-    margin: 2rem auto;
+    margin: 1rem auto;
     background-color: rgb(235, 235, 72);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Kalam', cursive;
     border-radius: 1rem;
     color: #1a41a7;
 }
 
+.translation-section>h2
+    {
+        margin: 1rem;
+        font-size: medium;
+    }
 
 footer{
     position: absolute;
-    font-size:small;
+    font-size: 1rem;
+    font-weight: 800;
     width: 100%;
     background-color: rgb(235, 235, 72);
     bottom: 0%;
